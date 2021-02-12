@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    padding-top: 10px;
+    /* background-image:url("imgPres.jpg");
+    height: 100vh;
+    background-size: cover; */
+    background: rgba(76, 63, 98, 0.596);
+}
+ul {
+    list-style: none;
+    min-width: 100%;
+    min-height: 4vh;
+}
+ul li {
+    display: inline-block;
+
+}
+ul li a {
+    text-decoration: none;
+    padding: 14px 16px;
+    border: 1px solid transparent;
+    text-align: center;
+    transform: 0.6s ease;
+    color: #fff;
+
+}
+ul li a:hover{
+    background-color: rgb(60, 60, 82);
+    color: white;
+} 
+.all{
+    background-image: url(imgPres.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 475px;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    position: relative;
+
+}
+.all::before{ 
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+     background-color: #121031;
+    opacity: 0.7;
+
+
+}
+h1{
+    text-align: center;
+     color: rgb(255, 255, 255); 
+    transform: translate(-7%,-35%);
+    font-size: 50px;
+    z-index: -1;
+}
+.boutton{
+    
+    transform: translate(-1%,-35%);
+    gap: 10px;
+    
+
+}
+.btn-acc {
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: 0.6s ease;
+    background-color:#6E5E6E ;
+    border-radius: 24px;
+    font-size:29px;
+    padding: 10px 10px;
+    z-index: 1;
+}
+.btn-acc:hover{
+    background-color: rgb(60, 60, 82);
+    color: white;
+}
+.mov{
+    height: 52px
+}
+.medias{
+    display: grid;
+    place-items: center;
+    place-items: self-end;
+    grid-template-columns: 70% 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 0.4fr 0.4fr;
+    position: relative;
+    z-index: 1;
+}
+.icone-medias{
+    width: 40px;
+}
+
+.icon11{
+    grid-area: 1/3 / 2/4 ;
+}
+.icon22{
+    grid-area: 2/2 / 3/3;
+
+}
+.icon33{
+    grid-area: 3/1 / 4/2;
+}
+/* presentation  */
+.présentation{
+    grid-area: présentation;
+    text-align: center;
+    background-color:#3A3B5C ;
+    color: white;
+    display: flex;
+    place-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 52px;
+}
+.grantti{
+    text-align: center;
+    font-size: 50px;
+    font-family: "Segoe UI";
+    color: #f1f1f1;
+}
+#para{
+    display: flex;
+    flex-direction: column;
+   
+    gap:25px;
+    justify-content: space-between;
+    margin-left: 12vh;
+    margin-right: 12vh;
+}
+.p{
+    color: #f1f1f1;
+    font-size: 31px;
+    font-family: 'Segoe UI';
+}
+.ord{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 140px; 
+    list-style-type: none;
+    
+}
+span{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: #f1f1f1;
+    background-color: #63BFCD;
+    display: inline-block;
+    text-align: center;
+    border: #707070;
+    margin-right: 10px;
+}
+.h4{
+    font-size: 31px;
+    color:#f1f1f1;
+}
+/* SECTION OF MTY PROJECT */
+.portfolio {
+    grid-area:my project;
+    
+    /* position: relative; */
+    /* margin-left: auto; */
+    padding-bottom: 80px;
+
+}
+
+.cont{
+    margin-top: 40px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  1fr 1fr 1fr;
+    grid-gap:8px;
+    /* padding-left: 10px; */
+    grid-column-gap: 20px;
+    grid-row-gap: 40px; 
+    /* display: flex;
+    flex-direction: column-reverse;
+    place-content: center;
+    align-items: center;
+    gap: 50px; */
+
+}
+
+.title {
+    color: #000;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Segoe UI";
+}
+
+.itemA1 {
+    border: 1px black solid;
+    grid-area: 1/2 / 2/3;
+}
+.itemA2 {
+    border: 1px black solid;
+    grid-area: 2/2 / 3/3;
+}
+.itemA3{
+    border: 1px black solid;
+    grid-area: 3/2 / 4/3;
+}
+
+.img1 {
+    background-image: url("bootstrap.jpg");
+    background-size: cover;
+}
+.img2 {
+    background-image: url("console.jpg");
+    background-size: cover;
+}
+.img3 {
+    background-image: url("animcss.jpg");
+    background-size: cover;
+}
+.img1,.img2,.img3{
+    width: 100%;
+    height: 150px;
+}
+h3{
+    text-align: center;
+    font-size: 40px ;
+    padding: 18px;
+}
+.my{
+    text-decoration: none;
+    color:black;
+}
+/* section experience */
+.experience{
+    grid-area: exper;
+    position: relative;
+    /* margin-left: auto; */
+    background-color: #3A3B5C;
+    min-height: 40vh;
+ }
+.experiences-grid{
+
+    display: grid;
+    grid-template-columns:  1fr 1fr  ;
+    grid-template-rows: 1fr 1fr;
+    grid-gap:50px;
+    /* display: flex;
+    flex-direction: initial;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    justify-items: center; */
+
+
+}
+
+.h3{
+    text-align: center;
+    font-size: 50px;
+    font-family: "Segoe UI";
+    color:rgb(255, 255, 255);
+    height: 7vh;
+    /* padding-top:21px ; */
+    
+}
+
+.experience-cart{
+    border: solid 2px #90EAF7;
+    background-color: #CBCCC9;
+    /* border-radius: 27px; */
+    grid-area: 1/1 / 2/2;
+    /* padding: 18px */
+}
+
+h3{
+font-size: 20px;
+display: inline-block
+
+}
+
+.experience-cart.one{
+    grid-area: 1/2 / 2/3;
+}
+
+.experience-cart.two{
+    grid-area:2/1 / 3/2;
+}
+.experience-cart.tree{
+    grid-area: 2/2 / 3/3;
+}
+p{
+    /* padding-top: 27px; */
+} 
+/* section my skills */
+
+
+.section-range {
+    grid-area: skills;
+    background-image: url("safae.jpg");
+    background-size: cover;
+    /* background-position: right; */
+    position: relative;
+    min-height: 60vh;
+    background-attachment: scroll;
+}
+   .section-range::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: #121031;
+        opacity: 0.7;
+    }
+    .ty{
+        
+        text-align: center;
+        font-size: 50px;
+        font-family: "Segoe UI";
+        color:#f1f1f1;
+        position: relative; 
+    }
+    .grille {
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows: repeat(6,1fr);  
+        /* padding-left:40px;  */
+        /* padding-right:40px;  */
+       /* padding-bottom: 230px; */
+       padding-top: 100px;
+       position: relative;
+       align-items: center;
+       grid-area: 12px; 
+       gap: 2vh;
+        
+        
+    } 
+    .contan {
+        grid-area: 2/2 / 3/3;
+     
+        background-image: linear-gradient(to right, #5071F0, white);
+        height: 25px;
+    }
+    .cont1 {
+      
+        grid-area:4/2 / 5/3 ;
+        background-image: linear-gradient(to right, #5071F0, white);
+        height: 25px;
+    }
+    .cont2{
+        grid-area: 6/2 / 7/3;
+        background-image: linear-gradient(to right, #5071F0, white);
+        height: 25px;
+    }
+    .label{
+        grid-area: 1/2 / 2/3 ;
+        color: white;
+         }
+    .label1{
+            grid-area: 3/2 / 4/3;
+            color: white;
+        }
+    .label2{
+            grid-area: 5/2 / 6/3;
+            color: white;
+        }
+         /* section contact */
+
+         .contact{
+            position: relative;
+            background-image: url('pex.jpg') ;
+            background-size: cover;
+        } 
+        .contact::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            background-color: rgba(0,0,0,0.5);
+        }
+        
+        .contact h2{
+            color: rgb(255 255 255);
+            text-align: center;
+            font-size: 50px;
+            font-family: "Segoe UI"; 
+            position: relative;
+        }
+         
+        form{
+            display: grid;
+            grid-template-columns: 1fr;
+            position: relative;
+        }
+        label{
+            display: block;
+            color:white;
+        }
+        input,textarea{
+            width: 100%;
+            padding: 10px;
+        }
+        .formgroup{
+            width: calc(100% - 300px);
+            height: 100px;
+            margin: auto;
+        }
+        button{
+            padding: 13px;
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+        .cat:hover{
+            background-color: gray;
+            color:white;
+        }
