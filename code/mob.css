@@ -7,12 +7,13 @@
     /* background-image:url("imgPres.jpg");
     height: 100vh;
     background-size: cover; */
-    background: rgba(76, 63, 98, 0.596);
+    background: #8788A5;
 }
 ul {
     list-style: none;
     min-width: 100%;
     min-height: 4vh;
+    font-size: 32px;
 }
 ul li {
     display: inline-block;
@@ -24,7 +25,7 @@ ul li a {
     border: 1px solid transparent;
     text-align: center;
     transform: 0.6s ease;
-    color: #fff;
+    color: rgb(253, 247, 247);
 
 }
 ul li a:hover{
@@ -58,15 +59,16 @@ ul li a:hover{
 h1{
     text-align: center;
      color: rgb(255, 255, 255); 
-    transform: translate(-7%,-35%);
+    transform: translate(0%,-35%);
     font-size: 50px;
     z-index: -1;
 }
-.boutton{
+.bouttons{
     
-    transform: translate(-1%,-35%);
-    gap: 10px;
-    
+    transform: translate(0%,36%);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 
 }
 .btn-acc {
@@ -80,14 +82,16 @@ h1{
     font-size:29px;
     padding: 10px 10px;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    width: 166px;
+    left: 56px;
 }
 .btn-acc:hover{
     background-color: rgb(60, 60, 82);
     color: white;
 }
-.mov{
-    height: 52px
-}
+
 .medias{
     display: grid;
     place-items: center;
@@ -98,7 +102,7 @@ h1{
     z-index: 1;
 }
 .icone-medias{
-    width: 40px;
+    width: 60px;
 }
 
 .icon11{
@@ -135,11 +139,11 @@ h1{
    
     gap:25px;
     justify-content: space-between;
-    margin-left: 12vh;
-    margin-right: 12vh;
+    margin-left: 6vh;
+    margin-right: 6vh;
 }
 .p{
-    color: #f1f1f1;
+    color: #DAD7EE;
     font-size: 31px;
     font-family: 'Segoe UI';
 }
@@ -155,11 +159,11 @@ h1{
     
 }
 span{
-    width: 25px;
-    height: 25px;
+    width: 34px;
+    height: 37px;
     border-radius: 50%;
-    color: #f1f1f1;
-    background-color: #63BFCD;
+    color: #DAD7EE;
+    background-color: #CA5B5B;
     display: inline-block;
     text-align: center;
     border: #707070;
@@ -167,7 +171,8 @@ span{
 }
 .h4{
     font-size: 31px;
-    color:#f1f1f1;
+    color:#DAD7EE;
+    font-family: Sitka Subheading;
 }
 /* SECTION OF MTY PROJECT */
 .portfolio {
@@ -235,8 +240,9 @@ span{
 }
 h3{
     text-align: center;
-    font-size: 40px ;
+    font-size: 23px ;
     padding: 18px;
+    
 }
 .my{
     text-decoration: none;
@@ -262,6 +268,7 @@ h3{
     justify-content: space-between;
     gap: 20px;
     justify-items: center; */
+    padding: 30px;
 
 
 }
@@ -284,9 +291,10 @@ h3{
     /* padding: 18px */
 }
 
-h3{
+.hh{
 font-size: 20px;
-display: inline-block
+display: inline-block;
+color: #DAD7EE;
 
 }
 
